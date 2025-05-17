@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root {
+    /* Default light theme variables */
+    --color-primary: #3b82f6;
+    --color-primary-focus: #2563eb;
+    --color-secondary: #6b7280;
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f9fafb;
+    --color-text: #1f2937;
+    --color-text-secondary: #4b5563;
+  }
+  
+  /* Dark theme */
+  .dark {
+    --color-primary: #60a5fa;
+    --color-primary-focus: #3b82f6;
+    --color-secondary: #9ca3af;
+    --color-bg: #1f2937;
+    --color-bg-secondary: #111827;
+    --color-text: #f9fafb;
+    --color-text-secondary: #e5e7eb;
+  }
+  
+  /* Light theme (explicit) */
+  .theme-light {
+    --color-primary: #3b82f6;
+    --color-primary-focus: #2563eb;
+    --color-secondary: #6b7280;
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f9fafb;
+    --color-text: #1f2937;
+    --color-text-secondary: #4b5563;
+  }
+  
+  /* Dark theme (explicit) */
+  .theme-dark {
+    --color-primary: #60a5fa;
+    --color-primary-focus: #3b82f6;
+    --color-secondary: #9ca3af;
+    --color-bg: #1f2937;
+    --color-bg-secondary: #111827;
+    --color-text: #f9fafb;
+    --color-text-secondary: #e5e7eb;
+  }
+  
+  /* Purple theme */
+  .theme-purple {
+    --color-primary: #8b5cf6;
+    --color-primary-focus: #7c3aed;
+    --color-secondary: #a78bfa;
+    --color-bg: #f5f3ff;
+    --color-bg-secondary: #ede9fe;
+    --color-text: #5b21b6;
+    --color-text-secondary: #7c3aed;
+  }
+  
+  /* Forest theme */
+  .theme-forest {
+    --color-primary: #10b981;
+    --color-primary-focus: #059669;
+    --color-secondary: #6ee7b7;
+    --color-bg: #ecfdf5;
+    --color-bg-secondary: #d1fae5;
+    --color-text: #065f46;
+    --color-text-secondary: #047857;
+  }
+  
+  /* Ocean theme (dark) */
+  .theme-ocean.dark, .theme-ocean {
+    --color-primary: #0ea5e9;
+    --color-primary-focus: #0284c7;
+    --color-secondary: #7dd3fc;
+    --color-bg: #0c4a6e;
+    --color-bg-secondary: #082f49;
+    --color-text: #e0f2fe;
+    --color-text-secondary: #bae6fd;
+  }
+  
+  /* Sunset theme */
+  .theme-sunset {
+    --color-primary: #f59e0b;
+    --color-primary-focus: #d97706;
+    --color-secondary: #fbbf24;
+    --color-bg: #fffbeb;
+    --color-bg-secondary: #fef3c7;
+    --color-text: #92400e;
+    --color-text-secondary: #b45309;
+  }
+  
+  /* Add utility classes for theme color indicators */
+  .bg-theme-light {
+    background-color: #3b82f6;
+  }
+  .bg-theme-dark {
+    background-color: #1f2937;
+  }
+  .bg-theme-purple {
+    background-color: #8b5cf6;
+  }
+  .bg-theme-forest {
+    background-color: #10b981;
+  }
+  .bg-theme-ocean {
+    background-color: #0ea5e9;
+  }
+  .bg-theme-sunset {
+    background-color: #f59e0b;
+  }
+  
+
+  /* Theme-specific component styles */
+.bg-primary {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+  }
+  
+  .bg-primary:hover {
+    background-color: var(--color-primary-focus) !important;
+  }
+  
+  /* Text color enforcement */
+  .text-text {
+    color: var(--color-text) !important;
+  }
+  
+  .text-text-secondary {
+    color: var(--color-text-secondary) !important;
+  }
+
+  /* Primary button styles */
+.bg-primary {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+  }
+  
+  /* Secondary button styles */
+  .bg-secondary {
+    background-color: var(--color-secondary) !important;
+    color: white !important;
+  }
+  
+  /* Outlined button style */
+  button.outlined {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+  }
+
+  .bg-theme-light {
+    background-color: #3b82f6 !important;
+  }
+  /* Similar rules for other themes */
+
+  body {
+    color: var(--color-text);
+  }
